@@ -1,0 +1,36 @@
+GET http://localhost:3000/products
+
+###
+GET http://localhost:3000/students
+
+###
+DELETE http://localhost:3000/students/delete
+
+###
+POST http://localhost:3000/students/create
+
+###
+GET http://localhost:3000/products/78891
+
+###
+GET http://localhost:3000/products/active
+
+###
+GET http://localhost:3000/products/category/oficina/id/123
+
+###
+POST http://localhost:3000/products/create
+Content-Type: application/json
+
+{
+    "name": "Roomba",
+    "description": "Limpia muy bien",
+    "price": 399,
+    "category": "hogar"
+}
+
+###
+GET http://localhost:3000/products/list?page=10&total=5
+
+###
+PUT http://localhost:3000/students/edit
